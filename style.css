@@ -1,0 +1,265 @@
+/*Обнуление*/
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
+
+.content{
+    font-family: 'Roboto', sans-serif;
+    min-height: 100%;
+    overflow: hidden;
+
+    display: flex;
+    background-color: #445162;
+    
+    
+    /*flex-direction: column;*/
+
+    
+}
+
+.body{
+    max-width: 1100px;
+    margin: 0px auto;
+    background-color: #fff;
+
+
+}
+
+.head{
+
+    background-color: #000;
+    font-size: 25px;
+    display: flex;
+    color: #fff;
+    
+   
+
+}
+
+.logo{
+    width: 30%;
+    margin: 35px 0px 35px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+
+.navi{
+    width: 40%;
+    margin: 35px 0px 35px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none; /*убираем маркеры*/
+    
+   
+}
+
+.navi a{
+    text-decoration: none;
+    color: #fff;
+   
+}
+
+
+
+
+.navi a{
+    margin: 0 0 0 20px;
+}
+
+.networks{
+    margin: 35px 0px 35px 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    list-style-type: none;
+    flex-basis: auto;
+    font-size: 40px;
+
+}
+
+.networks a{
+
+    margin: 15px;
+}
+
+.main{
+    display: flex;
+    background-color: rgb(175, 175, 175);
+    color: #000;
+}
+
+.text{
+    width: 50%;
+    margin: 25px;
+    
+}
+.title{
+    font-size: 60px;
+    margin: 0 0 30px;
+
+}
+.smaltext{
+    font-size: 18px;
+
+}
+
+.foto{
+    width: 50%;
+    margin: 25px;
+    position: relative;
+
+}
+
+
+
+.footer{
+    min-height: 25vh;
+    background-color: rgb(175, 175, 175);
+    
+}
+.footer__form input{
+    display: inline-block;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.footer__form input:focus{
+    outline: 3px solid red;
+}
+
+.footer__form input:focus::placeholder{
+    color:rgb(117, 34, 34);
+}
+
+.footer__form{
+    display: flex;
+    width: 100%;
+ 
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer__form_name,
+.footer__form_mail,
+.footer__form_submit
+{
+    width: 30%;
+
+}
+
+.manyfoto{
+
+    width: 600px;
+    display: flex;
+    margin: 0px auto;
+   
+    
+}
+
+.black{
+    max-width: 1100px;
+    margin: 0px auto;
+    background-color: #000;
+    height: 680px;
+}
+
+.footer_text{
+    margin: 0px auto;
+    font-size: 40px;
+    color: #000;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+
+}
+
+@media (max-width: 769px) {
+    .head{
+        font-size: 18px;
+        line-height: 22px;
+        flex-direction: column;
+    }
+
+    .navi{
+        margin: 35px 0px 35px 30px;
+    }
+    .networks{
+        margin: 35px 370px 35px 0px;
+    
+    }
+    .logo{
+        margin: 35px 0px 35px 80px;
+    }
+    .main{
+        font-size: 18px;
+        line-height: 22px;
+        flex-direction: column;
+    }
+    .foto{
+        width: 200px;
+        display:contents;
+        margin: 0px auto;
+
+    }
+    .manyfoto{
+
+        width: 300px;
+        display: flex;
+        margin: 0px auto;
+       
+        
+    }
+    .footer__form{
+        flex-direction: column;
+        height: none;
+        align-items: none;
+        font-size: 14px;
+    }
+    .footer_text{
+        display:contents;
+    }
+}
